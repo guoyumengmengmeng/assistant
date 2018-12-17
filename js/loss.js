@@ -1,20 +1,4 @@
-var fabiao=document.forms[0]
-fabiao.addEventListener('submit',function(e){
-  var face=document.getElementsByTagName("input")[0].value;
-  var username=document.getElementsByTagName("input")[1].value;
-  var fabiaocontent=document.getElementsByTagName("input")[2].value;
-  var userpicture=document.getElementsByTagName("input")[3].value;
-
-  let entry = new Entry({
-    avatar: face,
-    name: username,
-    text: fabiaocontent,
-    photo: userpicture
-  })
-  entry.generateDOM()
-  
-},false);
-
+// 声明一条信息的类
 class Entry {
   constructor (arg) {
     this.avatar = arg.avatar
@@ -23,82 +7,49 @@ class Entry {
     this.photo = arg.photo
   }
   generateDOM () {
-    let ul = document.createElement("ul")
-
-    let avatar = document.createElement("li")
-    let name = document.createElement("li")
-    let text = document.createElement("li")
-    let photo = document.createElement("li")
-
-    avatar.innerText = this.avatar
+    // 创建一条信息的容器
+    let section = document.createElement('section')
+    // 设定容器的class，以便匹配CSS，以下两种方式均可
+    // section.setAttribute('class', 'entry')
+    section.className = 'entry'
+    // 创建存放不同信息的DOM
+    let avatar = document.createElement('img')
+    let name = document.createElement('em')
+    let text = document.createElement('p')
+    let photo = document.createElement('div')
+    // 赋值给这些DOM的内容
+    avatar.src = '../img/L5.jpg'
     name.innerText = this.name
     text.innerText = this.text
     photo.innerText = this.photo
-
-    ul.appendChild(avatar)
-    ul.appendChild(name)
-    ul.appendChild(text)
-    ul.appendChild(photo)
-
-    document.getElementsByTagName('main')[0].appendChild(ul)
+    // 将赋值后的DOM添加到容器
+    section.appendChild(avatar)
+    section.appendChild(name)
+    section.appendChild(text)
+    section.appendChild(photo)
+    // 将处理好的容器添加到页面
+    let posts = document.querySelector('main')
+    let firstEntry = posts.firstChild
+    posts.insertBefore(section, firstEntry)
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var ads=document.getElementById("addclass-mask");
-var adsform=document.getElementById("mask-form");
-var adsbutton=document.getElementsByTagName("button")[0];
-var hnumber=document.getElementsByTagName("h5");
-var add=document.getElementById("content");
-var count=1;
-window.onload=function(){
-  ads.style.display = 'none';
-  var x=new Date;
-  document.getElementsByTagName("input")[1].innerHTML=x;
+// 声明黑幕
+let mask = document.getElementById('mask')
+// 声明表单
+let post = document.forms[0]
+// 给加号图标绑定弹出选单的事件
+document.getElementById('pop-up-post').onclick = () => {
+  mask.style.display = 'block'
 }
-function addclass(){
-  ads.style.display = 'block';
-}
-  adsform.addEventListener('submit',function(e){
-  var classname=document.getElementsByTagName("input")[0].value;
-  var timetxt=document.getElementsByTagName("input")[1].value;
-  var placetxt=document.getElementsByTagName("input")[2].value;
-  var txt1=document.createElement("h5");
-  txt1.innerHTML(count);
-  add.appendChild(txt1);
-  var txt2=document.createElement("figcaption");
-  txt2.innerHTML(timetxt);
-  add.appendChild(txt1);
-  var txt2=document.createElement("figcaption");
-  txt2.innerHTML(placetxt);
-  add.appendChild(txt1);
-
-},false);
+// 给表单绑定上传时的事件
+post.addEventListener('submit', e => {
+  e.preventDefault()
+  let entry = new Entry({
+    avatar: post.avatar.value,
+    name: post.name.value,
+    text: post.text.value,
+    photo: post.photo.value
+  })
+  entry.generateDOM()
+  mask.style.display = 'none'
+}, false)

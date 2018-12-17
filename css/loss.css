@@ -1,41 +1,34 @@
-main{
+main {
   background-color: #ccccff;
-  /* height: 1800px; */
   display: grid;
-  /* grid-gap: 10px; */
-  /* grid-template-rows: repeat(5,1fr); */
-}
-#addclass-mask{
-    width:45%;
-}
-ul{
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: auto auto auto;
-  border-bottom: thin solid dimgray;
-  gap: 1rem;
-  padding: 1rem;
-  font-size: smaller;
-}
-li{
-  text-align: left;
 }
 
-.name {
+#mask > form {
+  width:45%;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, auto);
+  border-bottom: thin solid dimgray;
+  gap: .75rem;
+  padding: .75rem;
+  font-size: smaller;
+}
+
+.entry > em {
+  font-style: normal;
+  font-weight: bold;
   color: rebeccapurple;
 }
 
-img{
-  text-align: center;
+.entry > img {
+  grid-row: 1 / 4;
+}
+
+img {
   height: 50px;
   width: 50px;
-  border-radius: 100px;
-
-}
-.avatar{
-  grid-row: 1/4;
-}
-.addcontent{
-  height: 200px;
-  width: 40%;
+  border-radius: 50%;
 }

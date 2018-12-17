@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>OUC小助1</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/loss.css">
-    <link rel="stylesheet" href="../css/fontello.css">
-    <link rel="stylesheet" href="../css/mask.css">
-  </head>
-  <body>
-    <div id="root">
-      <header>
-        <span class="icon-left-open" onclick="window.history.go(-1)"></span>
-        <h1>失物招领</h1>
-        <span class="icon-plus" onclick="addclass()"></span>
-        <h1> </h1>
-        <h4 value="1"></h4>
-      </header>
-      <div id="addclass-mask" >
-        <form  id="mask-form" class="form1" method="post">
-        <input class="face" type="img" name="face" src="../img/L5.jpg"><br>
-        <input class="username" type="text"  value="">匿名<br>
-        <input class="addcontent" type="text" name="subject" value=""><br>
-        <input class="addphototure" type="img" src="+" value="">+<br>
-        <button type="submit" class="buttons" >发表</button>
-      </form>
-      </div>
-      <main>
-        <ul>
-          <li class="avatar"><img src="../img/L5.jpg" ></li>
-          <li class="name">我叫小红</li>
-          <li class="text">我丢了智能卡，有没有见过呀</li>
-          <li class="photo">photo</li>
-        </ul>
-        <ul>
-          <li class="avatar"><img src="../img/b1.jpg" ></li>
-          <li class="name">小小校长</li>
-          <li class="text">今天开会丢了本书，有同学看到吗今天开会丢了本书，有同学看到吗今天开会丢了本书，有同学看到吗今天开会丢了本书，有同学看到吗今天开会丢了本书，有同学看到吗今天开会丢了本书，有同学看到吗</li>
-          <li class="photo">photo</li>
-        </ul>
-      </main>
-      </div>
-      <footer>  </footer>
-<script type="text/javascript" src="../js/loss.js">
 
-</script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>失物招领</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/loss.css">
+  <link rel="stylesheet" href="../css/fontello.css">
+  <link rel="stylesheet" href="../css/mask.css">
+</head>
+
+<body>
+  <div id="root">
+    <header>
+      <span class="icon-left-open" onclick="window.history.go(-1)"></span>
+      <h1>失物招领</h1>
+      <span id="pop-up-post" class="icon-plus"></span>
+      <h1> </h1>
+      <h4 value="1"></h4>
+    </header>
+    <div id="mask">
+      <form method="post">
+        <input class="face" type="img" name="avatar" src="../img/L5.jpg">
+        <input class="username" type="text" name="name">
+        <label><input type="checkbox" name="anonymous" value=""><span>匿名</span></label>
+        <input class="addcontent" type="text" name="text" value="">
+        <input class="addphototure" type="img" name="photo" value="">
+        <button type="submit" class="buttons">发表</button>
+      </form>
+    </div>
+    <main>
+      <section class="entry">
+        <img src="../img/L5.jpg">
+        <em>我叫小红</em>
+        <p>我丢了智能卡，有没有见过呀</p>
+        <div class="photos">
+          photo
+        </div>
+      </section>
+      <section class="entry">
+        <img src="../img/b1.jpg">
+        <em>小小校长</em>
+        <p>今天开会丢了本书，有同学看到吗</p>
+        <div class="photos">
+          photo
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../js/loss.js" charset="utf-8"></script>
+</body>
+
 </html>
