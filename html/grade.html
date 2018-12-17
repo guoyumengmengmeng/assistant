@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>OUC小助1</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/grade.css">
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/mask.css">
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <span class="icon-left-open" onclick="window.history.go(-1)"></span>
+        <h1>成绩</h1>
+      </header>
+      <aside class="">
+        <h3>学号：16040021*** </h3>
+        <h3 id="selectgrade">当前选择学分：114.5 </h3>
+        <h3 id="selectjidian">绩点：4 </h3>
+        <h3 id="selectavg">加权：86 </h3>
+      </aside>
+      <main>
+        <button type="button" name="selectall" class="buttons" onclick="selectssall()" >全选</button>
+        <button type="button" name="selectall" class="buttons" onclick="selectssnone()" >反选</button>
+        <form class=""  method="post">
+        <div class="button-content">
+        <input type="checkbox" name="grade" value="1" onclick="compute()">概率统计
+        <span class="grade" value="96">成绩：96</span>
+        <span></span>
+        <span class="value" value="2.0">学分:2.0</span>
+        <span class="dot" value="4">绩点：4</span>
+        </div>
+        <div class="button-content">
+        <input type="checkbox" name="grade" value="2" onclick="compute()">移动web开发技术基础
+        <span class="grade" value="96">成绩：96</span>
+        <span></span>
+        <span class="value" value="2">学分:2.0</span>
+        <span class="dot" value="4">绩点：4</span>
+        </div>
+        <div class="button-content">
+        <input type="checkbox" name="grade" value="3" onclick="compute()">移动web开发技术基础
+        <span class="grade" value="96">成绩：96</span>
+        <span></span>
+        <span class="value" value="2">学分:2.0</span>
+        <span class="dot" value="4">绩点：4</span>
+        </div>
+        <div class="button-content">
+        <input type="checkbox" name="grade" value="4" onclick="compute()">概率统计
+        <span class="grade" value="96">成绩：96</span>
+        <span></span>
+        <span class="value" value="2">学分:2.0</span>
+        <span class="dot" value="4">绩点：4</span>
+        </div>
+        <div class="button-content">
+        <input type="checkbox" name="grade" value="5" onclick="compute()">经济法
+        <span class="grade" value="96">成绩：96</span>
+        <span></span>
+        <span class="value" value="2">学分:2.0</span>
+        <span class="dot" value="4">绩点：4</span>
+        </div>
+        <div class="button-content">
+        <input type="checkbox" name="grade" value="6" onclick="compute()">课程名
+        <span class="grade" value="96">成绩：96</span>
+        <span></span>
+        <span class="value" value="2">学分:2.0</span>
+        <span class="dot" value="4">绩点：4</span>
+        </div>
+        <div class="button-content">
+        <input type="checkbox" name="grade" value="7" onclick="compute()">课程名
+        <span class="grade" value="96">成绩：96</span>
+        <span></span>
+        <span class="value" value="2">学分:2.0</span>
+        <span class="dot" value="4">绩点：4</span>
+        </div>
+        <div class="button-content">
+        <input type="checkbox" name="grade" value="8" onclick="compute()">课程名
+        <span class="grade" value="96">成绩：96</span>
+        <span></span>
+        <span class="value" value="2.0">学分:2.0</span>
+        <span class="dot" value="4">绩点：4</span>
+        </div>
+        <div class="button-content">
+        <input type="checkbox" name="grade" value="9" onclick="compute()">课程名
+        <span class="grade" value="96">成绩：96</span>
+        <span></span>
+        <span class="value" value="2.0">学分:2.0</span>
+        <span class="dot" value="4">绩点：4</span>
+        </div>
+
+        </form>
+        </main>
+      </div>
+      <footer>  </footer>
+<script type="text/javascript" src="../js/grade.js">
+
+</script>
+  </body>
+</html>

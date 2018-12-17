@@ -1,0 +1,28 @@
+input{
+padding: 0.5rem;
+width: auto;
+font-size: 20px;
+font-family: "华文楷体";
+border-radius: 20px;
+background-color: #ffffff;
+color:#000000;
+font-weight: 400;
+margin-top: 10px;
+margin-bottom: 10px;
+ }
+
+#buttons{
+  font-weight: 400;
+  width: auto;
+  font-size: 25px;
+  font-family: "华文楷体";
+  border-radius: 5px;
+  background-color: #ffffff;
+  color:#998888;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* #ad {
+  opacity: 1;
+} */

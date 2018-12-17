@@ -1,0 +1,30 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:repeat(5,1fr) ;
+  gap: 1rem;
+  background-color: #e6e6fa;
+  align-items: center;
+  height: 80vh;
+  font-weight:bold;
+}
+
+.cover {
+  grid-column: 1 / 4;
+}
+
+figure {
+  margin: auto;
+  width: 60%;
+  border-radius: 5px;
+  background: #ccccff;
+  color: #111144;
+  padding: 5px;
+}
+figcaption {
+  padding: .8rem;
+}
+
+footer {
+    background-color: #9F88FF;
+}

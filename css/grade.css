@@ -1,0 +1,52 @@
+aside{
+  display: grid;
+  grid-template-columns:  1fr 1fr ;
+  grid-template-rows:  1fr 1fr ;
+  font-size: 13px;
+  width: 94%;
+  justify-content: center;
+  background-color: #eeeeff;
+  border-radius: 15px 15px 0px 0px;
+  margin: auto;
+  padding-left: 21px;
+  margin-top: 10px;
+
+}
+#root{
+  gap:0px;
+}
+.button-content{
+  display: grid;
+  grid-template-columns: 10% 60% auto;
+  margin: 2px;
+  padding: 3px;
+  font-size: 15px;
+  border:thin solid #ffffff;
+  gap:0.3rem;
+
+}
+.buttons{
+  font-weight: 400;
+  width: auto;
+  height: auto;
+  font-size: 5px;
+  font-family: "华文楷体";
+  /* border-radius: 5px; */
+  border-width: 0px;
+  background-color: #eeeeff;
+  /* color:#998888; */
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+.title{
+  font-size: 12px;
+}
+h2{
+  font-size: 15px;
+  grid-column: 1/4;
+}
+main{
+  background-color: #eeeeff;
+    height: auto;
+
+}

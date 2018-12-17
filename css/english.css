@@ -1,0 +1,66 @@
+header{
+  background:url("../img/L5.jpg");
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:10% 1fr 1fr 1fr 20%;
+  /* gap: 1rem; */
+  background-color: #e6e6fa;
+  align-items: center;
+  height: 80vh;
+  font-weight:bold;
+  background: url("../img/L5.jpg");
+  /* opacity: 0.5; */
+}
+
+/* .cover {
+  grid-column: 1 / 4;
+} */
+img{
+  height:20px;
+  width: 50%;
+  margin: auto;
+}
+figure {
+  font-weight: 400;
+  width: 88%;
+  font-size: 25px;
+  font-family: "华文楷体";
+  border-radius: 5px;
+  /* color:#998888; */
+  margin: auto;
+  justify-content: center;
+  border-width: 0px 2px 0px 2px;
+  padding: 1rem;
+  background: #ffffff;
+  color: #000000;
+  grid-column: 1/3;
+  height: 100%;
+}
+figure > button {
+  font-weight: 400;
+  width: 100%;
+  font-size: 30px;
+  font-family: "华文楷体";
+  border-radius: 5px;
+  color:#ffffff;
+  margin-top: 10px;
+  font-weight: bold;
+  background: url("../img/L5.jpg");
+  margin: auto;
+}
+.cut{
+  font-weight: 400;
+  width: auto;
+  font-size: 20px;
+  font-family: "华文楷体";
+  border-radius: 5px;
+  color:#998888;
+  font-weight: bold;
+  /* background: #ccccff; */
+  background: #ffffff;
+  margin: auto;
+}

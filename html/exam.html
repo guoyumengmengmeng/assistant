@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>OUC小助1</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/exam.css">
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/mask.css">
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <span class="icon-left-open" onclick="window.history.go(-1)"></span>
+        <h1>考试安排</h1>
+        <span class="icon-plus" onclick="addclass()"></span>
+        <h1> </h1>
+        <h4 value="1">2018年秋季学期</h4>
+      </header>
+      <div id="addclass-mask" >
+        <form  id="mask-form" class="form1" method="post">
+        <input type="text" name="subject" value=""><br>
+        <input type="datetime-local" name="day" value="2019-01-01T16:00:00"><br>
+        <input type=place name="place" value="4001"><br>
+        <button type="submit" class="buttons" >添加考试安排</button>
+      </form>
+      </div>
+      <main>
+        <figure id="content">
+          <h5>序号</h5>
+          <figcaption>考试科目</figcaption>
+          <figcaption>考试时间</figcaption>
+          <figcaption>考试地点</figcaption>
+          <h5>1</h5>
+          <figcaption>大学英语1</figcaption>
+          <figcaption>1/13 周五<br> 10：00-12：00</figcaption>
+          <figcaption>6304</figcaption>
+          <h5>2</h5>
+          <figcaption>PYTHON</figcaption>
+          <figcaption>1/13 周五<br> 10：00-12：00</figcaption>
+          <figcaption>6304</figcaption>
+          <h5>3</h5>
+          <figcaption>概率统计</figcaption>
+          <figcaption>1/13 周五<br> 10：00-12：00</figcaption>
+          <figcaption>6304</figcaption>
+          <h5>4</h5>
+          <figcaption>PYTHON</figcaption>
+          <figcaption>1/13 周五<br> 10：00-12：00</figcaption>
+          <figcaption>6304</figcaption>
+          <h5>5</h5>
+          <figcaption>概率统计</figcaption>
+          <figcaption>1/13 周五<br> 10：00-12：00</figcaption>
+          <figcaption>6304</figcaption>
+          <h5>6</h5>
+          <figcaption>PYTHON</figcaption>
+          <figcaption>1/13 周五<br> 10：00-12：00</figcaption>
+          <figcaption>6304</figcaption>
+          <h5>7</h5>
+          <figcaption>概率统计</figcaption>
+          <figcaption>1/13 周五<br> 10：00-12：00</figcaption>
+          <figcaption>6304</figcaption>
+        </figure>
+      <main>
+      </div>
+      <footer>  </footer>
+<script type="text/javascript" src="../js/exam.js">
+
+</script>
+  </body>
+</html>

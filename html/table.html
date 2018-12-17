@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>OUC小助1</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/mask.css">
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <span class="icon-left-open" onclick="window.history.go(-1)"></span>
+        <h1>课程表</h1>
+        <span class="icon-plus" onclick="addclass()"></span>
+        <h1> </h1>
+        <h4 value="1">第一周</h4>
+      </header>
+      <div id="addclass-mask" >
+        <form  id="mask-form" class="form1" method="post">
+        <input type="text" name="subject" value="" placeholder="请输入课程名"><br>
+        <!-- <br> -->
+        <!-- <br> -->
+        <select class="week" name="">
+          <option value="1">周一</option>
+          <option value="2">周二</option>
+          <option value="3">周三</option>
+          <option value="4">周四</option>
+          <option value="5">周五</option>
+          <option value="6">周六</option>
+          <option value="7">周日</option>
+        </select>
+        <br>
+        <br>
+        <select class="start" name="">
+          <option value="1">第一、二节</option>
+          <option value="3">第三、四节</option>
+          <option value="5">第五、六节</option>
+          <option value="7">第七、八节</option>
+          <option value="9">第九、十节</option>
+          <option value="11">第十一、十二节</option>
+        </select>
+        <br>
+        <br>
+        <input type="text" name="place" value="4001"><br>
+        <button type="submit" class="buttons" >添加课程</button>
+      </form>
+      </div>
+      <main>
+        <figure class='week' name="month">月份</figure>
+        <figure class='week' name="mon">周一</figure>
+        <figure class='week' name="tue">周二</figure>
+        <figure class='week' name="wen">周三</figure>
+        <figure class='week' name="thur">周四</figure>
+        <figure class='week' name="fri">周五</figure>
+        <figure class='week' name="sat">周六</figure>
+        <figure class='week' name="sun">周七</figure>
+        <figure class='classroom' name="c1">1 2</figure>
+        <figure class='cover' name="we11 11" value="11">概率统计@5606</figure>
+        <figure class='cover' name="we21 21" value="21">移动web开发技术基础@7304</figure>
+        <figure class='cover' name="we31 31" value="31"></figure>
+        <figure class='cover' name="we41 41" value="41"></figure>
+        <figure class='cover' name="we51 51" value="51"></figure>
+        <figure class='cover' name="we61 61" value="61">移动web开发技术基础@7304</figure>
+        <figure class='cover' name="we71 71" value="71"></figure>
+        <figure class='classroom' name="c2">3 4</figure>
+        <figure class='cover' name="we13 13" value="11"></figure>
+        <figure class='cover' name="we23 23" value="21"></figure>
+        <figure class='cover' name="we33 33" value="31">移动web开发技术基础@7304</figure>
+        <figure class='cover' name="we43 43" value="41"></figure>
+        <figure class='cover' name="we53 53" value="51"></figure>
+        <figure class='cover' name="we63 63" value="61"></figure>
+        <figure class='cover' name="we73 73" value="71">移动web开发技术基础@7304</figure>
+        <figure class='classroom' name="c3">5 6</figure>
+        <figure class='cover' name="we15 15" value="11"></figure>
+        <figure class='cover' name="we25 25" value="21">移动web开发技术基础@7304</figure>
+        <figure class='cover' name="we35 35" value="31"></figure>
+        <figure class='cover' name="we45 45" value="41">概率统计@5606</figure>
+        <figure class='cover' name="we55 55" value="51"></figure>
+        <figure class='cover' name="we65 65" value="61"></figure>
+        <figure class='cover' name="we75 75" value="71">移动web开发技术基础@7304</figure>
+        <figure class='classroom' name="c4">7 8</figure>
+        <figure class='cover' name="we17 17" value="11"></figure>
+        <figure class='cover' name="we27 27" value="21"></figure>
+        <figure class='cover' name="we37 37" value="31">移动web开发技术基础@7304</figure>
+        <figure class='cover' name="we47 47" value="41"></figure>
+        <figure class='cover' name="we57 57" value="51"></figure>
+        <figure class='cover' name="we67 67" value="61">概率统计@5606</figure>
+        <figure class='cover' name="we77 77" value="71"></figure>
+        <figure class='classroom' name="c5">9 10</figure>
+        <figure class='cover' name="we19 19"> </figure>
+        <figure class='cover' name="we29 29"> </figure>
+        <figure class='cover' name="we39 39"> </figure>
+        <figure class='cover' name="we49 49"> </figure>
+        <figure class='cover' name="we59 59"> </figure>
+        <figure class='cover' name="we69 69"> </figure>
+        <figure class='cover' name="we79 79"> </figure>
+        <figure class='classroom' name="c6">11 12</figure>
+        <figure class='cover' name="we111 111"> </figure>
+        <figure class='cover' name="we211 211"> </figure>
+        <figure class='cover' name="we311 311"> </figure>
+        <figure class='cover' name="we411 411"> </figure>
+        <figure class='cover' name="we511 511"> </figure>
+        <figure class='cover' name="we611 611"> </figure>
+        <figure class='cover' name="we711 711"> </figure>
+        <figure class='classroom' name="c7">13 14</figure>
+        <figure class='cover' name="we111 111"> </figure>
+        <figure class='cover' name="we211 211"> </figure>
+        <figure class='cover' name="we311 311"> </figure>
+        <figure class='cover' name="we411 411"> </figure>
+        <figure class='cover' name="we511 511" > </figure>
+        <figure class='cover' name="we611 611"> </figure>
+        <figure class='cover' name="we711 711"> </figure>
+    </main>
+    </div>
+      <footer>  </footer>
+<script type="text/javascript" src="../js/table.js"></script>
+  </body>
+</html>
