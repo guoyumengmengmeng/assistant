@@ -1,28 +1,48 @@
 var fabiao=document.forms[0]
 fabiao.addEventListener('submit',function(e){
-var fabiaocontent=document.getElementsByTagName("input")[2].value;
-var face=document.getElementsByTagName("input")[0].value;
-var username=document.getElementsByTagName("input")[1].value;
-var userpicture=document.getElementsByTagName("input")[3].value;
-var ulfirst=document.createElement("ul");
-var li1=document.createElement("li");
-var li2=document.createElement("li");
-var li3=document.createElement("li");
-var li1=document.createElement("li");
-var li1=document.createElement("li");
-var li1=document.createElement("li");
-txt1.innerHTML(count);
-add.appendChild(txt1);
-var txt2=document.createElement("figcaption");
-txt2.innerHTML(timetxt);
-add.appendChild(txt1);
-var txt2=document.createElement("figcaption");
-txt2.innerHTML(placetxt);
-add.appendChild(txt1);
+  var face=document.getElementsByTagName("input")[0].value;
+  var username=document.getElementsByTagName("input")[1].value;
+  var fabiaocontent=document.getElementsByTagName("input")[2].value;
+  var userpicture=document.getElementsByTagName("input")[3].value;
 
+  let entry = new Entry({
+    avatar: face,
+    name: username,
+    text: fabiaocontent,
+    photo: userpicture
+  })
+  entry.generateDOM()
+  
 },false);
 
+class Entry {
+  constructor (arg) {
+    this.avatar = arg.avatar
+    this.name = arg.name
+    this.text = arg.text
+    this.photo = arg.photo
+  }
+  generateDOM () {
+    let ul = document.createElement("ul")
 
+    let avatar = document.createElement("li")
+    let name = document.createElement("li")
+    let text = document.createElement("li")
+    let photo = document.createElement("li")
+
+    avatar.innerText = this.avatar
+    name.innerText = this.name
+    text.innerText = this.text
+    photo.innerText = this.photo
+
+    ul.appendChild(avatar)
+    ul.appendChild(name)
+    ul.appendChild(text)
+    ul.appendChild(photo)
+
+    document.getElementsByTagName('main')[0].appendChild(ul)
+  }
+}
 
 
 
