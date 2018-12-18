@@ -14,8 +14,10 @@ class Question {
   }
 }
 
-let word = ['electricity','revenue','smash','scorn','stack','temperament','threshold','transition','penalty','pledge','premise','prescription','prestige','instinct','integrity','intuition','lease','legislation','manifestation','notion','opponent','ornament','blunder'];
-let translation = ['n.电力','n.税收，岁入','n.打碎，粉碎','n.轻蔑，鄙视', 'n.堆，一堆' ,'n.气质，性格' ,'n.开端，入口','n.过渡，转变' ,'n.制裁，惩罚' ,'n.保证，誓言' ,'n.前提，假设' ,'n.处方' ,'n.威信，威望' ,'n.本能，直觉' ,'n.正直，诚实' ,'n.直觉' ,'n.租约，契约' ,'n.立法，法律' ,'n.表现(形式)' ,'n.概念，观念，理解' ,'n.敌人，对手' ,'n.装饰，装饰品' ,'n.错误，大错'];
+let word = ['与八进制数64.3等值的二进制数是','与十六进制数26.E等值的二进制数是',
+'下列数据中，有可能是八进制数的是','已知字母“A”的二进制ASCII编码为“1000001”,则字母“B”的十进制ASCII编码为',
+'在不同进制的四个数中，最大的一个数是','1GB等于'];
+let translation = ['110100.011','100100.111','100110.111','100101.101','488','317','597','189','33','65','66','32','(1101100)2','(65)10','(70)8','(A7)16','1024×1024字节','1024M字节','1024M二进制位','1000M字节'];
 
 let xuhao = document.getElementById('xuhao')
 let danci = document.getElementById('danci')
