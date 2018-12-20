@@ -23,7 +23,10 @@
       <form method="post">
         <!-- <input class="face" type="img" name="avatar" src="../img/L5.jpg" >
         <input class="username" type="text" name="name"> -->
-        <label style="color:white"><input type="checkbox" name="anonymous" value="" style="color:white"><span>匿名</span></label>
+        <!-- input加行内样式没用，是因为input的color指的是checkbox内文字的颜色，但是checkbox是不包含文字的
+        label加行内样式有用，是因为它是span的父元素，span继承了它的文字颜色
+        最有效办法，给span加行内样式 -->
+        <label><input type="checkbox" name="anonymous" value=""><span style="color:white">匿名</span></label>
         <input class="addcontent" type="text" name="text" value="" placeholder="请输入文章标题">
         <!-- <input class="addphototure" type="text" name="time" value=""> -->
         <input class="addlink" type="text" name="texts" value="" placeholder="请输入文章链接">

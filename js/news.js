@@ -1,10 +1,10 @@
 // 声明一条信息的类
 class Entry {
   constructor (arg) {
-    this.avatar = arg.avatar
-    this.name = arg.name
+    // this.avatar = arg.avatar
+    // this.name = arg.name
     this.text = arg.text
-    this.time = arg.time
+    // this.time = arg.time
     this.link = arg.link
   }
   generateDOM () {
@@ -16,15 +16,17 @@ class Entry {
     // 创建存放不同信息的DOM
     let avatar = document.createElement('img')
     let name = document.createElement('em')
-    let text = document.createElement('p')
+    // text是一个p元素，何来href属性，自然不能跳转
+    // let text = document.createElement('p')
+    let text = document.createElement('a')
     let time = document.createElement('div')
     // 赋值给这些DOM的内容
     avatar.src = '../img/L5.jpg'
     name.innerText = '中国编程界第一辣鸡'
     // name.innerText = this.name
     text.innerText = this.text
-    text.href=this.link
-    let date=new Date()
+    text.href = this.link
+    let date = new Date()
     // time.innerText = date.getFullYear()+'年'+date.getMonth()+'月'+date.getDate();
     time.innerText = `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`
     // 将赋值后的DOM添加到容器
@@ -42,7 +44,6 @@ class Entry {
 let mask = document.getElementById('mask')
 // 声明表单
 let post = document.forms[0]
-let links= document.getElementsByClassName('addlink').value
 // 给加号图标绑定弹出选单的事件
 document.getElementById('pop-up-post').onclick = () => {
   mask.style.display = 'block'
@@ -55,9 +56,8 @@ post.addEventListener('submit', e => {
     // name: post.name.value,
     text: post.text.value,
     // time: post.time.value,
-    link: links
+    link: document.getElementsByClassName('addlink')[0].value
   })
   entry.generateDOM()
-  entry.text.onclick="entry.link"
   mask.style.display = 'none'
 }, false)
