@@ -1,0 +1,34 @@
+main {
+  background-color: #ccccff;
+  display: grid;
+}
+
+#mask > form {
+  width:45%;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, auto);
+  border-bottom: thin solid dimgray;
+  gap: .75rem;
+  padding: .75rem;
+  font-size: smaller;
+}
+
+.entry > em {
+  font-style: normal;
+  font-weight: bold;
+  color: rebeccapurple;
+}
+
+.entry > img {
+  grid-row: 1 / 4;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}

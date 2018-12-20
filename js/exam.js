@@ -45,7 +45,6 @@ function addclass(){
   txt1.innerHTML = count;
   add.appendChild(txt1);
   console.log('success')
-
   let lessonName=document.createElement("figcaption");
   lessonName.innerText = classname
   add.appendChild(lessonName)
@@ -61,4 +60,9 @@ function addclass(){
 let weekdays = '周一，周二，周三，周四，周五，周六，周日'.split('，')
 function dayToWeekday (day) {
   return weekdays[day - 1]
+}
+function over(){
+  // let lastchild=add.lastChild;
+  // add.removeChild(lastchild);
+  ads.style.display = 'none';
 }
