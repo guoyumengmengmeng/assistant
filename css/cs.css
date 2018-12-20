@@ -7,29 +7,29 @@ header{
 }
 main {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows:15% 20% 90%;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:10% 30% 60%;
   gap: 1rem;
-  background-color: rgb(0,0,0,0.5);
+  background-color: rgb(0,0,0,0.8);
   align-items: center;
-  height: 80vh;
+  height: 100vh;
   font-weight:bold;
   justify-content: center;
   justify-items: center;
   text-align: center;
   align-items: center;
-  padding: auto;
+  /* padding: auto; */
   /* width:96%; */
 }
 
 .time{
-  /* padding-top: 10%; */
+  grid-column: 1/4;
   border: thick solid #f0f0f0;
   border-radius: 100px;
   height: 25px;
   width: 25px;
   text-align: center;
-  /* margin: auto; */
+  margin: auto;
   color: #ffffff;
 }
 
@@ -53,13 +53,13 @@ main {
 figure{
   justify-content: center;
   width: 100%;
-  padding-top: 5%;
+  /* padding-top: 5%; */
   grid-column: 1/4;
   border: thick solid #ffffff;
-  background-color: #33FFAA;
+  background-color: #eeeeee;
   border-radius: 100px;
   height: 100%;
-  margin: auto;
+  /* margin: auto; */
 }
 figure > span{
   padding-top: 5px;
