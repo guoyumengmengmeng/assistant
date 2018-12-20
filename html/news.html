@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>OUC小助1</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/table.css">
-    <link rel="stylesheet" href="../css/fontello.css">
-    <link rel="stylesheet" href="../css/mask.css">
-  </head>
-  <body>
-    <div id="root">
-      <header>
-        <span class="icon-left-open" onclick="window.history.go(-1)"></span>
-        <h1>课程表</h1>
-        <span class="icon-plus" onclick="addclass()"></span>
-        <h1> </h1>
-        <h4 value="1">第一周</h4>
-      </header>
-      <main>
-      </div>
-      <footer>  </footer>
-<script type="text/javascript" src="../js/table.js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>校园通</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/news.css">
+  <link rel="stylesheet" href="../css/fontello.css">
+  <link rel="stylesheet" href="../css/mask.css">
+</head>
 
-</script>
-  </body>
+<body>
+  <div id="root">
+    <header>
+      <span class="icon-left-open" onclick="window.history.go(-1)"></span>
+      <h1>校园通</h1>
+      <span id="pop-up-post" class="icon-plus"></span>
+      <h1> </h1>
+      <h4 value="1"></h4>
+    </header>
+    <div id="mask">
+      <form method="post">
+        <input class="face" type="img" name="avatar" src="../img/L5.jpg" >
+        <input class="username" type="text" name="name">
+        <label style="color:white"><input type="checkbox" name="anonymous" value="" style="color:white"><span>匿名</span></label>
+        <input class="addcontent" type="text" name="text" value="" placeholder="请输入文章标题">
+        <input class="addphototure" type="text" name="time" value="">
+        <input class="addlink" type="text" name="texts" value="" placeholder="请输入文章链接">
+        <button type="submit" class="buttons">发表</button>
+      </form>
+    </div>
+    <main>
+      <section class="entry">
+        <img src="../img/L5.jpg">
+        <em>四六级</em>
+        <p onclick="window.location.href='siliuji.html'">四六级报名开始啦！你准备好了吗</p>
+        <div class="times">
+          发表时间
+        </div>
+      </section>
+      <section class="entry">
+        <img src="../img/b1.jpg">
+        <em>小小校长</em>
+        <p onclick="window.location.href='finalexambegin.html'">期末考试开始喽！让我们一起努力吧</p>
+        <div class="times">
+          发表时间
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../js/news.js" charset="utf-8"></script>
+</body>
+
 </html>
