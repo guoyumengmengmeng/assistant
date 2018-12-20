@@ -22,7 +22,7 @@ main {
   font-weight: bold;
   color: rebeccapurple;
 }
-.face{
+/* .face{
   opacity: 0;
   position: absolute;
 }
@@ -33,7 +33,7 @@ main {
 .addphototure{
   opacity: 0;
   position: absolute;
-}
+} */
 
 .entry > img {
   grid-row: 1 / 4;

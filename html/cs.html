@@ -12,7 +12,8 @@
   </head>
   <div id="addclass-mask" >
     <h1 id="round-message"></h1>
-    <button type="button" name="button" onclick="window.history.go(0)">重新来过</button>
+    <button type="button" name="restart" onclick="window.history.go(0)">重新来过</button>
+    <button type="button" name="next" onclick="hideMask()">继续</button>
   </div>
   <body>
     <div id="root">
@@ -34,10 +35,10 @@
           <span id="danci"></span>
         </figure>
         <figcaption>
-          <div class="option" value='0' onclick="judge()"></div>
-          <div class="option" value='1' onclick="judge()"></div>
-          <div class="option" value='2' onclick="judge()"></div>
-          <div class="option" value='3' onclick="judge()"></div>
+          <div class="option" value='0'></div>
+          <div class="option" value='1'></div>
+          <div class="option" value='2'></div>
+          <div class="option" value='3'></div>
         </figcaption>
       </main>
       </div>

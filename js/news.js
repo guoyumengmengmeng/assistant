@@ -20,11 +20,13 @@ class Entry {
     let time = document.createElement('div')
     // 赋值给这些DOM的内容
     avatar.src = '../img/L5.jpg'
-    name.innerText = this.name
+    name.innerText = '中国编程界第一辣鸡'
+    // name.innerText = this.name
     text.innerText = this.text
     text.href=this.link
     let date=new Date()
-    time.innerText = date.getFullYear()+'年'+date.getMonth()+'月'+date.getDate();
+    // time.innerText = date.getFullYear()+'年'+date.getMonth()+'月'+date.getDate();
+    time.innerText = `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`
     // 将赋值后的DOM添加到容器
     section.appendChild(avatar)
     section.appendChild(name)
@@ -49,10 +51,10 @@ document.getElementById('pop-up-post').onclick = () => {
 post.addEventListener('submit', e => {
   e.preventDefault()
   let entry = new Entry({
-    avatar: post.avatar.value,
-    name: post.name.value,
+    // avatar: post.avatar.value,
+    // name: post.name.value,
     text: post.text.value,
-    time: post.time.value,
+    // time: post.time.value,
     link: links
   })
   entry.generateDOM()

@@ -76,6 +76,7 @@ function init() {
       hash[index] = 1
     }
   }
+}
 //   for (let timuIndex of timuIndices) {
 //     questions.push(new Question(timuIndex))
 //   }
@@ -111,6 +112,8 @@ function countdown () {
 
 // console.log('aaa')
 
+// let questionIndex = 0
+
 function loadQuestion (questionIndex) {
   timeRemaining = 5
   var txt = document.getElementsByClassName('time')[0]
@@ -124,14 +127,17 @@ function loadQuestion (questionIndex) {
   }
 }
 
+// loadQuestion(questionIndex)
+
 function judge () {
   // console.log(this)
-    document.getElementById('addclass-mask').style.display = 'block'
-    if (this.value == timu[timuIndices[questionIndex]].correctness) {
-      document.getElementById('addclass-mask').innerText = 'congratulations+解析'
-    } else {
-      document.getElementById('round-message').innerText = `正确答案是${timu[timuIndices[questionIndex]].options[timu[timuIndices[questionIndex]].correctness]}+解析`
-    }
+  document.getElementById('addclass-mask').style.display = 'block'
+  console.log(timu[timuIndices[questionNumero]].correctness)
+  if (this.value === timu[timuIndices[questionNumero]].correctness) {
+    document.getElementById('addclass-mask').innerText = 'congratulations+解析'
+  } else {
+    document.getElementById('round-message').innerText = `正确答案是${timu[timuIndices[questionNumero]].options[timu[timuIndices[questionNumero]].correctness]}+解析`
+  }
   window.clearInterval(countdownInterval)
   if (++questionNumero < 5) {
     loadQuestion(questionNumero)
@@ -143,9 +149,20 @@ function judge () {
 }
 
 let questionNumero = 0
+
 function end(){
-    document.getElementById('addclass-mask').style.display = 'block'
+  mask.style.display = 'block'
+  next.style.display = 'none'
 }
+
+let mask = document.getElementById('addclass-mask')
+let restart = document.getElementsByName('restart')[0]
+let next = document.getElementsByName('next')[0]
+
+function hideMask () {
+  mask.style.display = 'none'
+}
+
 window.onload = () => {
   init()
   loadQuestion(questionNumero)

@@ -1,18 +1,19 @@
-/* html, body, #root {
+html, body {
   height: 100%;
-} */
+}
 
 header{
-  background-color: rgb(0,0,0,0.5);
+  grid-template-rows: auto auto;
+  background-color: rgba(0,0,0,0.5);
 }
 main {
   display: grid;
   grid-template-columns:repeat(3,1fr);
   grid-template-rows:10% 30% 60%;
   gap: 1rem;
-  background-color: rgb(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   font-weight:bold;
   justify-content: center;
   justify-items: center;
@@ -51,8 +52,10 @@ main {
   border-radius:  20px 0px 0px 20px;
 } */
 figure{
-  word-break:break-all;
-  justify-content: center;
+  display: grid;
+  /* word-break:break-all; */
+  /* justify-content: center; */
+  align-content: center;
   width: 100%;
   /* padding-top: 5%; */
   grid-column: 1/4;
