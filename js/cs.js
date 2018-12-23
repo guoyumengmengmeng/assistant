@@ -162,6 +162,9 @@ let next = document.getElementsByName('next')[0]
 function hideMask () {
   mask.style.display = 'none'
 }
+function over(){
+  mask.style.display = 'none';
+}
 
 window.onload = () => {
   init()

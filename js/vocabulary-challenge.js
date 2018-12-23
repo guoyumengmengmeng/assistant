@@ -95,6 +95,7 @@ function loadQuestion (questionIndex) {
 
 function judge () {
   // console.log(this)
+
   if (this.getAttribute('data-correctness') === 'true') {
     let leftScore = parseInt(scores.left.innerText)
     console.log(leftScore)

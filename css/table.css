@@ -1,11 +1,15 @@
+body,html{
+  height: 100%;
+  width: 100%;
+}
 main {
   display: grid;
-  grid-template-columns: 25px repeat(7,1fr);
-  grid-template-rows:25px repeat(6,1fr);
+  grid-template-columns: 30px repeat(7,1fr);
+  grid-template-rows:60px repeat(5,1fr);
   gap: 0.5rem;
-  background-color: #e6e6fa;
+  /* background-color: #e6e6fa; */
   align-items: center;
-  height: 100vh;
+  height: 100%;
   font-weight:bold;
 }
 
@@ -17,13 +21,13 @@ h4{
 }
 figure {
   font-size: 10px;
-   margin: auto;
-  width: 60%;
- height:80%;
-  border-radius: 5px;
+   margin: 0px;
+  /* width: 60%; */
+ height:90%;
+  border-radius: 2px;
   background: #ccccff;
   color: #111144;
-  padding: 5px;
+  padding: 6px;
 }
 figcaption {
   padding: .8rem;

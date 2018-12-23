@@ -14,11 +14,12 @@
     <h1 id="round-message"></h1>
     <button type="button" name="restart" onclick="window.history.go(0)">重新来过</button>
     <button type="button" name="next" onclick="hideMask()">继续</button>
+    <button type="button" class="buttons" onclick="over()">取消</button>
   </div>
   <body>
     <div id="root">
       <header>
-        <span class="icon-left-open" onclick="window.history.go(-1)"></span>
+        <span class="icon-left-open" onclick="javascript:window.location.href='../main.html'"></span>
         <h4>计算机基础知识</h4>
         <span class="icon-chart-line" onclick="spare"></span>
         <h4> 题库：</h4>
@@ -42,7 +43,7 @@
         </figcaption>
       </main>
       </div>
-      <footer>  </footer>
+      <!-- <footer>  </footer> -->
       <!-- <script type="text/javascript" src="../js/english1.js"></script> -->
       <script src="../js/cs.js" charset="utf-8"></script>
   </body>

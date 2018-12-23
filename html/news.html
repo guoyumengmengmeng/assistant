@@ -13,7 +13,7 @@
 <body>
   <div id="root">
     <header>
-      <span class="icon-left-open" onclick="window.history.go(-1)"></span>
+      <span class="icon-left-open" onclick="javascript:window.location.href='../main.html'"></span>
       <h1>校园通</h1>
       <span id="pop-up-post" class="icon-plus"></span>
       <h1> </h1>
@@ -31,6 +31,7 @@
         <!-- <input class="addphototure" type="text" name="time" value=""> -->
         <input class="addlink" type="text" name="texts" value="" placeholder="请输入文章链接">
         <button type="submit" class="buttons">发表</button>
+        <button type="button" class="buttons" onclick="over()">取消</button>
       </form>
     </div>
     <main>

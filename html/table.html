@@ -12,8 +12,8 @@
   <body>
     <div id="root">
       <header>
-        <span class="icon-left-open" onclick="window.history.go(-1)"></span>
-        <h1>课程表</h1>
+        <span class="icon-left-open" onclick="javascript:window.location.href='../main.html'"></span>
+        <h3>课程表</h4>
         <span class="icon-plus" onclick="addclass()"></span>
         <h1> </h1>
         <h4 value="1">第一周</h4>
@@ -40,79 +40,72 @@
           <option value="5">第五、六节</option>
           <option value="7">第七、八节</option>
           <option value="9">第九、十节</option>
-          <option value="11">第十一、十二节</option>
         </select>
         <br>
         <br>
         <input type="text" name="place" value="4001"><br>
         <button type="submit" class="buttons" >添加课程</button>
+        <button type="button" class="buttons" onclick="over()">取消</button>
       </form>
       </div>
       <main>
-        <figure class='week' name="month">月份</figure>
-        <figure class='week' name="mon">周一</figure>
-        <figure class='week' name="tue">周二</figure>
-        <figure class='week' name="wen">周三</figure>
-        <figure class='week' name="thur">周四</figure>
-        <figure class='week' name="fri">周五</figure>
-        <figure class='week' name="sat">周六</figure>
-        <figure class='week' name="sun">周七</figure>
+        <figure class='week' name="month">课程</figure>
+        <figure class='week' name="mon">一</figure>
+        <figure class='week' name="tue">二</figure>
+        <figure class='week' name="wen">三</figure>
+        <figure class='week' name="thur">四</figure>
+        <figure class='week' name="fri">五</figure>
+        <figure class='week' name="sat">六</figure>
+        <figure class='week' name="sun">七</figure>
         <figure class='classroom' name="c1">1 2</figure>
-        <figure class='cover' name="we11 11" value="11">概率统计@5606</figure>
-        <figure class='cover' name="we21 21" value="21">移动web开发技术基础@7304</figure>
-        <figure class='cover' name="we31 31" value="31"></figure>
-        <figure class='cover' name="we41 41" value="41"></figure>
-        <figure class='cover' name="we51 51" value="51"></figure>
-        <figure class='cover' name="we61 61" value="61">移动web开发技术基础@7304</figure>
-        <figure class='cover' name="we71 71" value="71"></figure>
-        <figure class='classroom' name="c2">3 4</figure>
-        <figure class='cover' name="we13 13" value="11"></figure>
-        <figure class='cover' name="we23 23" value="21"></figure>
-        <figure class='cover' name="we33 33" value="31">移动web开发技术基础@7304</figure>
-        <figure class='cover' name="we43 43" value="41"></figure>
-        <figure class='cover' name="we53 53" value="51"></figure>
-        <figure class='cover' name="we63 63" value="61"></figure>
-        <figure class='cover' name="we73 73" value="71">移动web开发技术基础@7304</figure>
-        <figure class='classroom' name="c3">5 6</figure>
-        <figure class='cover' name="we15 15" value="11"></figure>
-        <figure class='cover' name="we25 25" value="21">移动web开发技术基础@7304</figure>
-        <figure class='cover' name="we35 35" value="31"></figure>
-        <figure class='cover' name="we45 45" value="41">概率统计@5606</figure>
-        <figure class='cover' name="we55 55" value="51"></figure>
-        <figure class='cover' name="we65 65" value="61"></figure>
-        <figure class='cover' name="we75 75" value="71">移动web开发技术基础@7304</figure>
-        <figure class='classroom' name="c4">7 8</figure>
-        <figure class='cover' name="we17 17" value="11"></figure>
-        <figure class='cover' name="we27 27" value="21"></figure>
-        <figure class='cover' name="we37 37" value="31">移动web开发技术基础@7304</figure>
-        <figure class='cover' name="we47 47" value="41"></figure>
-        <figure class='cover' name="we57 57" value="51"></figure>
-        <figure class='cover' name="we67 67" value="61">概率统计@5606</figure>
-        <figure class='cover' name="we77 77" value="71"></figure>
-        <figure class='classroom' name="c5">9 10</figure>
-        <figure class='cover' name="we19 19"> </figure>
-        <figure class='cover' name="we29 29"> </figure>
-        <figure class='cover' name="we39 39"> </figure>
-        <figure class='cover' name="we49 49"> </figure>
-        <figure class='cover' name="we59 59"> </figure>
-        <figure class='cover' name="we69 69"> </figure>
-        <figure class='cover' name="we79 79"> </figure>
-        <figure class='classroom' name="c6">11 12</figure>
+        <figure class='cover' data-name="11" >概率统计5606</figure>
+        <figure class='cover' data-name="21" >移动web开发技术基础7304</figure>
+        <figure class='cover' data-name="31" ></figure>
+        <figure class='cover' data-name="41" ></figure>
+        <figure class='cover' data-name="51" ></figure>
+        <figure class='cover' data-name="61" >移动web开发技术基础7304</figure>
+        <figure class='cover' data-name="71" ></figure>
+        <figure class='classroom' data-name="c2">3 4</figure>
+        <figure class='cover' data-name="13" ></figure>
+        <figure class='cover' data-name="23" ></figure>
+        <figure class='cover' data-name="33" >移动web开发技术基础7304</figure>
+        <figure class='cover' data-name="43" ></figure>
+        <figure class='cover' data-name="53" ></figure>
+        <figure class='cover' data-name="63" ></figure>
+        <figure class='cover' data-name="73" >移动web开发技术基础7304</figure>
+        <figure class='classroom' data-name="c3">5 6</figure>
+        <figure class='cover' data-name="15" ></figure>
+        <figure class='cover' data-name="25" >移动web开发技术基础7304</figure>
+        <figure class='cover' data-name="35" ></figure>
+        <figure class='cover' data-name="45" >概率统计5606</figure>
+        <figure class='cover' data-name="55" ></figure>
+        <figure class='cover' data-name="65" ></figure>
+        <figure class='cover' data-name="75" >移动web开发技术基础7304</figure>
+        <figure class='classroom' data-name="c4">7 8</figure>
+        <figure class='cover' data-name="17" ></figure>
+        <figure class='cover' data-name="27" ></figure>
+        <figure class='cover' data-name="37" >移动web开发技术基础7304</figure>
+        <figure class='cover' data-name="47" ></figure>
+        <figure class='cover' data-name="57" ></figure>
+        <figure class='cover' data-name="67" >概率统计5606</figure>
+        <figure class='cover' data-name="77" ></figure>
+        <figure class='classroom' data-name="c5">9 10</figure>
+        <figure class='cover' data-name="19"> </figure>
+        <figure class='cover' data-name="29"> </figure>
+        <figure class='cover' data-name="39"> </figure>
+        <figure class='cover' data-name="49"> </figure>
+        <figure class='cover' data-name="59"> </figure>
+        <figure class='cover' data-name="69"> </figure>
+        <figure class='cover' data-name="79"> </figure>
+        <!-- <figure class='classroom' name="c6">11 12</figure>
         <figure class='cover' name="we111 111"> </figure>
         <figure class='cover' name="we211 211"> </figure>
         <figure class='cover' name="we311 311"> </figure>
         <figure class='cover' name="we411 411"> </figure>
         <figure class='cover' name="we511 511"> </figure>
         <figure class='cover' name="we611 611"> </figure>
-        <figure class='cover' name="we711 711"> </figure>
-        <figure class='classroom' name="c7">13 14</figure>
-        <figure class='cover' name="we111 111"> </figure>
-        <figure class='cover' name="we211 211"> </figure>
-        <figure class='cover' name="we311 311"> </figure>
-        <figure class='cover' name="we411 411"> </figure>
-        <figure class='cover' name="we511 511" > </figure>
-        <figure class='cover' name="we611 611"> </figure>
-        <figure class='cover' name="we711 711"> </figure>
+        <figure class='cover' name="we711 711"> </figure> -->
+
     </main>
     </div>
       <footer>  </footer>

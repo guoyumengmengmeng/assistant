@@ -14,7 +14,7 @@
 <body>
   <div id="root">
     <header>
-      <span class="icon-left-open" onclick="window.history.go(-1)"></span>
+      <span class="icon-left-open" onclick="javascript:window.location.href='../main.html'"></span>
       <h1>失物招领</h1>
       <span id="pop-up-post" class="icon-plus"></span>
       <h1> </h1>
@@ -28,6 +28,7 @@
         <input class="addcontent" type="text" name="text" value="">
         <input class="addphototure" type="img" name="photo" value="">
         <button type="submit" class="buttons">发表</button>
+        <button type="button" class="buttons" onclick="over()">取消</button>
       </form>
     </div>
     <main>

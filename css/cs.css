@@ -1,12 +1,16 @@
-html, body {
-  height: 100%;
+/* html, body {
+  height: 700px;
+} */
+#root {
+  height: 676px;
+  background-color: rgba(0,0,0,0.5);
 }
-
 header{
   grid-template-rows: auto auto;
   background-color: rgba(0,0,0,0.5);
 }
 main {
+  height: 590px;
   display: grid;
   grid-template-columns:repeat(3,1fr);
   grid-template-rows:10% 30% 60%;

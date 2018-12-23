@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>OUC小助6</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/english.css">
+    <link rel="stylesheet" href="../css/english2.css">
     <link rel="stylesheet" href="../css/fontello.css">
     <link rel="stylesheet" href="../css/fontello1.css">
     <link rel="stylesheet" href="../css/mask.css">
   </head>
+  <div id="addclass-mask" >
+    <h1 id="round-message"></h1>
+    <button type="button" class="buttons" onclick="over()">取消</button>
+  </div>
   <body>
     <div id="root">
       <header>
@@ -17,32 +21,32 @@
         <h1>English</h1>
         <span class="icon-chart-line" onclick="spare"></span>
         <h1> </h1>
-        <h4 value="1">单词竞赛</h4>
+        <h4 value="1">好友PK</h4>
       </header>
       <main>
-          <div><img src="../img/L5.jpg" alt=""></div>
-          <div>得分：0 分 </div>
+        <div class="sign left">
+          <span id="score-left"></span>
+          <img src="../img/L5.jpg" alt="">
+        </div>
+        <div class="time"></div>
+        <div class="sign right">
+          <img src="../img/L5.jpg" alt="">
+          <span id="score-right"></span>
+        </div>
         <figure>
-          <figcaption>Friends competition</figcaption>
-          <button type="button" name="button n1" >
-            <span class=" icon-clock" onclick="location='english1.html'"></span>好友PK</button>
-      </figure>
-      <figure>
-          <figcaption>Random competition</figcaption>
-
-          <button type="button" name="button n2">
-            <span class="icon-ok" onclick="location='english2.html'"></span>随机PK</button>
+          <span id="xuhao"></span><br>
+          <span id="danci"></span>
         </figure>
-      <figure>
-          <figcaption>Ranking List</figcaption>
-          <button type="button" name="button n3">
-           <span class="  icon-star-empty" onclick="location='english3.html'"></span>排行榜</button>
-        </figure>
-      <div class="cut" onclick="location='english1.html'">更改单词书</div>
-      <div class="cut" onclick="location='english1.html'">单词测试</div>
+        <figcaption>
+          <div class="option"></div>
+          <div class="option"></div>
+          <div class="option"></div>
+          <div class="option"></div>
+        </figcaption>
       </main>
       </div>
       <footer>  </footer>
-<script type="text/javascript" src="../js/english.js"></script>
+      <!-- <script type="text/javascript" src="../js/english1.js"></script> -->
+      <script src="../js/vocabulary-challenge.js" charset="utf-8"></script>
   </body>
 </html>

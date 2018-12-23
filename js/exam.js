@@ -62,7 +62,5 @@ function dayToWeekday (day) {
   return weekdays[day - 1]
 }
 function over(){
-  // let lastchild=add.lastChild;
-  // add.removeChild(lastchild);
   ads.style.display = 'none';
 }

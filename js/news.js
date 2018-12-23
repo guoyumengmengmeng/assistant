@@ -48,6 +48,9 @@ let post = document.forms[0]
 document.getElementById('pop-up-post').onclick = () => {
   mask.style.display = 'block'
 }
+function over(){
+  mask.style.display = 'none';
+}
 // 给表单绑定上传时的事件
 post.addEventListener('submit', e => {
   e.preventDefault()

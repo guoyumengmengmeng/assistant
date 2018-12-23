@@ -35,6 +35,9 @@ class Entry {
 }
 // 声明黑幕
 let mask = document.getElementById('mask')
+function over(){
+  mask.style.display = 'none';
+}
 // 声明表单
 let post = document.forms[0]
 // 给加号图标绑定弹出选单的事件
