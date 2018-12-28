@@ -1,9 +1,18 @@
-/* html, body, #root {
-  height: 100%;
-} */
+body,html{
+  /* height: 100%; */
+  width: 100%;
+  overflow: hidden;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: 6rem 1fr;
+  /* height: 100%; */
+}
 
 header{
   background-color: #333333;
+  /* height: 6rem; */
 }
 main {
   display: grid;
@@ -12,7 +21,7 @@ main {
   gap: 1rem;
   background-color: #000000;
   align-items: center;
-  height: 80vh;
+  /* height: 80vh; */
   font-weight:bold;
   justify-content: center;
   justify-items: center;
@@ -64,7 +73,7 @@ figure{
 figure > span{
   padding-top: 5px;
   font-size: 20px;
-  font-family: "cursive";
+  /* font-family: "cursive"; */
   font-weight: bold;
 }
 .option{

@@ -1,7 +1,7 @@
-/* html, body, #root {
-  height: 100%;
-} */
+body,html{
 
+  width: 100%;
+}
 header{
   background-color: #333333;
 }
